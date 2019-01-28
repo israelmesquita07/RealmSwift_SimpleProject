@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0777580A21FF54930083145F /* InserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777580921FF54930083145F /* InserViewController.swift */; };
 		07807CC121FA465000C8008F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07807CC021FA465000C8008F /* AppDelegate.swift */; };
 		07807CC321FA465000C8008F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07807CC221FA465000C8008F /* ViewController.swift */; };
 		07807CC621FA465000C8008F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07807CC421FA465000C8008F /* Main.storyboard */; };
 		07807CC821FA465900C8008F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07807CC721FA465900C8008F /* Assets.xcassets */; };
 		07807CCB21FA465900C8008F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07807CC921FA465900C8008F /* LaunchScreen.storyboard */; };
+		30B0692D8DF0ECDD2AD44CD2 /* Pods_learningRealmIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 769EC11B4C41CF71C39CED34 /* Pods_learningRealmIO.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0777580921FF54930083145F /* InserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InserViewController.swift; sourceTree = "<group>"; };
 		07807CBD21FA465000C8008F /* learningRealmIO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learningRealmIO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07807CC021FA465000C8008F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07807CC221FA465000C8008F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		07807CC721FA465900C8008F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07807CCA21FA465900C8008F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07807CCC21FA465900C8008F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		769EC11B4C41CF71C39CED34 /* Pods_learningRealmIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_learningRealmIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2C98982E5828329B66613D6 /* Pods-learningRealmIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learningRealmIO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-learningRealmIO/Pods-learningRealmIO.debug.xcconfig"; sourceTree = "<group>"; };
+		EE939C3E3A5DC95CC7BB151D /* Pods-learningRealmIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-learningRealmIO.release.xcconfig"; path = "Pods/Target Support Files/Pods-learningRealmIO/Pods-learningRealmIO.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30B0692D8DF0ECDD2AD44CD2 /* Pods_learningRealmIO.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		061A59C9FC4FE2A28A89EEAE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				769EC11B4C41CF71C39CED34 /* Pods_learningRealmIO.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		07807CB421FA465000C8008F = {
 			isa = PBXGroup;
 			children = (
 				07807CBF21FA465000C8008F /* learningRealmIO */,
 				07807CBE21FA465000C8008F /* Products */,
+				1DE42CE9E26EA573E4C4CE8E /* Pods */,
+				061A59C9FC4FE2A28A89EEAE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +77,18 @@
 				07807CC721FA465900C8008F /* Assets.xcassets */,
 				07807CC921FA465900C8008F /* LaunchScreen.storyboard */,
 				07807CCC21FA465900C8008F /* Info.plist */,
+				0777580921FF54930083145F /* InserViewController.swift */,
 			);
 			path = learningRealmIO;
+			sourceTree = "<group>";
+		};
+		1DE42CE9E26EA573E4C4CE8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A2C98982E5828329B66613D6 /* Pods-learningRealmIO.debug.xcconfig */,
+				EE939C3E3A5DC95CC7BB151D /* Pods-learningRealmIO.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07807CCF21FA465900C8008F /* Build configuration list for PBXNativeTarget "learningRealmIO" */;
 			buildPhases = (
+				39423CFDA15548B00DE0D98B /* [CP] Check Pods Manifest.lock */,
 				07807CB921FA465000C8008F /* Sources */,
 				07807CBA21FA465000C8008F /* Frameworks */,
 				07807CBB21FA465000C8008F /* Resources */,
+				AC5F86C91B1CBACC5E1C0FEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,11 +159,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39423CFDA15548B00DE0D98B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-learningRealmIO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5F86C91B1CBACC5E1C0FEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-learningRealmIO/Pods-learningRealmIO-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-learningRealmIO/Pods-learningRealmIO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07807CB921FA465000C8008F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0777580A21FF54930083145F /* InserViewController.swift in Sources */,
 				07807CC321FA465000C8008F /* ViewController.swift in Sources */,
 				07807CC121FA465000C8008F /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +359,7 @@
 		};
 		07807CD021FA465900C8008F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2C98982E5828329B66613D6 /* Pods-learningRealmIO.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +378,7 @@
 		};
 		07807CD121FA465900C8008F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE939C3E3A5DC95CC7BB151D /* Pods-learningRealmIO.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
